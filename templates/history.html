@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Question History</h2>
+
+{% if questions %}
+    <table border="1" width="100%">
+        <tr>
+            <th>Question</th>
+            <th>Source</th>
+            <th>Created At</th>
+        </tr>
+        {% for q in questions %}
+        <tr>
+            <td>{{ q[0] }}</td>
+            <td>{{ q[1][:70] }}...</td>
+            <td>{{ q[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% else %}
+    <p>No questions yet.</p>
+{% endif %}
+{% endblock %}
