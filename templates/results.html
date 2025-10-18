@@ -1,16 +1,6 @@
-{% extends 'base.html' %}
-{% block content %}
 <h2>Generated Questions</h2>
-
-{% if questions %}
-    <ul>
-    {% for q in questions %}
-        <li>{{ q }}</li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p style="color: red;">No questions generated. Please try again.</p>
-{% endif %}
-
-<a href="{{ url_for('generate') }}">Generate More Questions</a>
-{% endblock %}
+<ul>
+  {% for q in questions %}
+    <li><pre>{{ q }}</pre></li>
+  {% endfor %}
+</ul>
