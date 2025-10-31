@@ -18,36 +18,36 @@ It leverages a Retrieval-Augmented Generation (RAG) pipeline integrated with a L
 
 🔄 Persistent vectorstore.pkl for fast reloading
 
-🏗️ Project Structure
 EduQuery/
 │
-├── app.py  
+├── app.py                        # Main Flask application
 │
-├── models/
-│   ├── rag_engine.py  
-│   ├── question_generator.py 
-│   ├── database.py
+├── models/                       # Core backend logic
+│   ├── rag_engine.py             # RAG engine for document retrieval
+│   ├── question_generator.py     # Combines retrieval and LLM question generation
+│   ├── database.py               # Handles database models and operations
 │   └── __init__.py
 │
-├── templates/ 
-│   ├── base.html
-│   ├── index.html
-│   ├── generate.html
-│   ├── results.html
-│   └── history.html
+├── templates/                    # Frontend (HTML using Jinja2)
+│   ├── base.html                 # Common layout
+│   ├── index.html                # Homepage
+│   ├── generate.html             # Upload & generate page
+│   ├── results.html              # Display generated questions
+│   └── history.html              # Shows saved question sets
 │
-├── utils/
-│   ├── ai_helper.py 
-│   ├── file_loader.py 
-│   └── validators.py  
+├── utils/                        # Helper functions and utilities
+│   ├── ai_helper.py              # Gemini API wrapper & prompt builder
+│   ├── file_loader.py            # PDF/Text file loader
+│   └── validators.py             # Input validation utilities
 │
-├── data/              
+├── data/                         # SQLite DB and saved artifacts
 │   └── questions.db
 │
-├── vectorstore.pkl 
-├── requirements.txt 
-├── .env
-└── README.md   
+├── vectorstore.pkl               # Persisted RAG vectorstore (auto-generated)
+│
+├── requirements.txt              # Python dependencies
+├── .env                          # Environment variables (not committed)
+└── README.md                     # Project documentation
 
 ⚙️ Requirements
 
