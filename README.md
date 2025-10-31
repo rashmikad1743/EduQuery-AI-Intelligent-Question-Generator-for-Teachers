@@ -21,15 +21,15 @@ It leverages a Retrieval-Augmented Generation (RAG) pipeline integrated with a L
 🏗️ Project Structure
 EduQuery/
 │
-├── app.py                        # Main Flask application
+├── app.py  
 │
 ├── models/
-│   ├── rag_engine.py             # RAG engine for document retrieval
-│   ├── question_generator.py     # Handles retrieval + LLM question generation
-│   ├── database.py               # Database helper for question storage
+│   ├── rag_engine.py  
+│   ├── question_generator.py 
+│   ├── database.py
 │   └── __init__.py
 │
-├── templates/                    # Jinja2 HTML templates
+├── templates/ 
 │   ├── base.html
 │   ├── index.html
 │   ├── generate.html
@@ -37,17 +37,17 @@ EduQuery/
 │   └── history.html
 │
 ├── utils/
-│   ├── ai_helper.py              # Gemini API wrapper and prompt builder
-│   ├── file_loader.py            # PDF/Text file loader
-│   └── validators.py             # Input and validation utilities
+│   ├── ai_helper.py 
+│   ├── file_loader.py 
+│   └── validators.py  
 │
-├── data/                         # SQLite DB and saved artifacts
+├── data/              
 │   └── questions.db
 │
-├── vectorstore.pkl               # Persisted RAG vectorstore
-├── requirements.txt              # Python dependencies
-├── .env                          # Environment variables
-└── README.md                     # Documentation
+├── vectorstore.pkl 
+├── requirements.txt 
+├── .env
+└── README.md   
 
 ⚙️ Requirements
 
