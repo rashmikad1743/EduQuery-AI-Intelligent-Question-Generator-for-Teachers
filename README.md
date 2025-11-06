@@ -35,37 +35,6 @@ It uses a **Retrieval-Augmented Generation (RAG)** pipeline integrated with **Go
 
 ---
 
-## 🏗️ Project Structure
-
-EDU/
-│
-├── 📄 streamlit_app.py # 🎯 Main Streamlit application (frontend + logic)
-├── 📄 rag_engine.py # 🧠 RAG (Retrieval-Augmented Generation) logic
-├── 📄 utils.py # ⚙️ Utility functions (text extraction, preprocessing, etc.)
-├── 📄 db.py # 💾 Database connection & storage operations
-├── 📄 requirements.txt # 📦 Python dependencies
-├── 📄 README.md # 📘 Project documentation
-├── 📄 .env # 🔑 API keys and environment variables (not committed)
-├── 📄 .gitignore # 🚫 Ignore unnecessary files and folders
-│
-├── 📁 data/ # 📚 Uploaded PDFs or text files
-│ └── uploaded.pdf # Example input file
-│
-├── 📁 models/ # 🤖 AI or vector models
-│ └── vectorstore.pkl # Pre-saved embeddings / vector database
-│
-├── 📁 database/ # 🗃️ Local DB storage
-│ └── questions.db # SQLite database for saved questions
-│
-├── 📁 assets/ # 🖼️ Project screenshots or UI images
-│ └── dashboard_preview.png
-│
-├── 📁 env/ # 🧩 Virtual environment (created locally)
-│ ├── Scripts/ (Windows)
-│ └── bin/ (Linux/Mac)
-│
-└── 📁 pycache/ # ⚡ Python cache (auto-generated)
-
 
 ---
 
@@ -209,3 +178,4 @@ Shields.io — Badges for README styling
 Made with ❤️ by Rashmika Rohit | Data & AI Engineer
 
 </div> ```
+
