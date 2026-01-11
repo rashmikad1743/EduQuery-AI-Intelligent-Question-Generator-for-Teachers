@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Project specific
+*.db
+vectorstore.pkl
+uploaded.pdf
+*.pdf
+
+# Data directory (keep but ignore content)
+data/*
+!data/.gitkeep
+
+# Documentation
+README.md
+*.md
