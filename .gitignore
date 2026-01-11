@@ -5,3 +5,5 @@ vectorstore.pkl
 questions.db
 uploaded.pdf
 venv/
+.venv/
+env/
